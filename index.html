@@ -1,134 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="/src/output.css">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Bookmark landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-
-  Features
-  Pricing
-  Contact
-  Login
-
-  A Simple Bookmark Manager
-
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
-
-  Get it on Chrome
-  Get it on Firefox
-
-  Features
-
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
-
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
-
-  Bookmark in one click
-
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
-
-  More Info
-
-  Intelligent search
-
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info
-
-  Download the extension
-
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
-
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
-
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
-
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
-
-  Frequently Asked Questions
   
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
+</body>
+</html>
+</head>
+<body>
+    <!-- header -->
+    <header>
+    <nav class="flex justify-between items-center py-4 mb-10 px-20">
+        <div><img src="/images/logo-bookmark.svg" alt=""></div>
+        <ul class=" md:flex  justify-items-end   items-center gap-5 hidden  uppercase text-purple-800 ">
+            <li>FEATURES</li>
+            <li>PRICING</li>
+            <li>CONTACT</li>
+            <button class=" rounded-md bg-red-700 p-2 w-24 text-white">LOGIN</button>
+            <i></i>
+        </ul>
+    </nav>
+    </header>
+    <!-- hero -->
+ <section class="relative ">
+<div class=" md:flex mt-32  place-items-center   justify-between ">
+    <div class=" flex  flex-col gap-6 items-start px-20">
+        <h2 class="uppercase text-[#4b5274] font-bold"> A Simple  Bookmark <br>Manager</h2>
+        <p class="text-[#9194a1] items-center"> A clean  and  simple  interface  to organise  your  favourite <br> websites. open a new browser  tab  and  see  your  sites  load <br> instantly . try it  for free. </p>
+    <div class="flex gap-10 mb-10">
+        <button class=" rounded-md p-2 hover:bg-black hover:duration-300 bg-blue-800 text-white">Get it  on chrome</button>
+        <button class=" rounded-md p-2 bg-white hover:active:bg-slate-600 shadow-md text-[#9194a1]">Get it on firefox</button>  
+     </div>
+ </div>
+<div class="bg-blue-800  absolute  right-0 w-[30vw]  h-60 bottom-9 p-20  rounded-l-full z-20 "></div> 
+ <div class="z-50  "><img src="/images/illustration-hero.svg  "></div>
+</div>
+<!-- rectangle -->
+ </section>
+     <!-- feature -->
+      <section>
+        <div class="flex  flex-col gap-20 items-center lg:items-center md:items-center py-20 ">
+            <div class="text-center py-8 gap-8">
+                <h2 class="text-[#52576e] font-bold text-2xl lowercase">Features</h2>
+                <p class="text-[#9194a1]"> our aim is to make it quick and  easy for you to access your <br> favourites websites. Your bookmarks sync between your devices <br> so you can access them on the go.</p>
+            </div>
+            <div  class="flex  border-b-2  md:items-center l gap-20 text-xl  flex-col lg:flex-row mb-32 justify-around text-[#7d85ad]">
+                <h6 class=" border-b-4 p-3  border-red-600 "> simple bookmarking </h6>
+                <h6 class=" border-t border-b-2 p-3 "> speedy searching</h6>
+                <h6 class=" p-3 md: border-t-2">easy sharing</h6>
+            </div>
+        </div>
+    </section>
+    <!-- feature2 -->
+     <section class=" relative">  
+        <div class=" flex py-10 justify-between flex-col-reverse lg:flex-row items-center ">
+         <div class=" ">
+            <div class="absolute bottom-20 z-50 px-10"><img src="/images/illustration-features-tab-1.svg" alt=""></div>
+            <div class=" bg-purple-800  h-60 p-28 w-[30vw]   rounded-r-full  right-0 z-10 "></div>
+        </div>
+            <div class="flex md:items-start  flex-col justify-between  gap-8 px-20 mb-10"> 
+                 <h2 class="uppercase text-[#313858] font-bold"> Bookmarking in one click</h2>
+                  <p class="text-[#9194a1]"> organise your bookmmarks  however you like .our <br> simple drag- and drop interface gives  you complete <br> control over how you manage your favourites sites </p>
+                 <div>
+                    <button class="rounded-md  bg-blue-800 p-3 text-white">more info</button>
+                 </div>
+           </div>
+     </section>
+      <!-- download -->
+     <section class=" flex py-20 items-center  flex-col px-10">
+        <div class="flex items-center flex-col gap-5 px-4">
+            <div class=" flex gap-4 py-20 flex-col items-center ">
+                <h2 class=" text-xl font-bold uppercase text-[#0a0e1f]"> download the extesion </h2>
+                <p class="text-[#9194a1]"> we have got more browsers in the pipleline . please  do let  us  know if <br> you have got  a  favourites you would like us to prioritize.</p>
+            </div>
+        </div>
+        <!-- card -->
+         <div class="md:flex gap-10 items-center justify-between mb-3mt-9 px-10">
+            <div class=" flex flex-col items-center gap-5 rounded-md shadow-md  p-4 mb-32">
+                <div><img src="/images/logo-chrome.svg" alt=""></div>
+                <div class=" border-b-4 border-dotted">
+                    <h2 class="text-xl font-black">add to chrome</h2>
+                    <p class="text-[#9194a1]"> Minimum version 62 </p>
+                </div>
+                <div class="btn">
+                    <button class="bg-blue-700 text-white p-2 rounded-md "> add and intall extension</button>
+                </div>
+            </div>
+            <div class=" flex flex-col items-center gap-5 rounded-md shadow-md p-4 mb-16">
+                <div><img src="/images/logo-firefox.svg" alt=""></div>
+                <div class=" border-b-4 border-dotted">
+                    <h2 class="text-xl font-black">add to firefox</h2>
+                    <p class="text-[#9194a1]">minimum version 55</p>
+                </div>
+                <div>
+                    <button class="bg-blue-700 text-white p-2 rounded-md">add and intall extension</button>
+                </div>
+            </div>
+            <div class=" flex flex-col items-center gap-5 rounded-md shadow-md p-4 mb-2">
+                <div class="flex flex-col gap-5">
+                    <div><img src="/images/logo-opera.svg" alt=""></div>
+                    <div class="border-b-4  border-dotted">
+                        <h2 class="text-xl font-black">add to opera</h2>
+                        <p class="text-[#9194a1]"> minimum version 46</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-blue-700 text-white p-2 rounded-md">add and intall extension</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+     <!-- fags -->
 
-  <!-- Question 1 -->
-  What is Bookmark?
-
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-  <!-- Question 2 -->
-  How can I request a new browser?
-
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  <!-- Question 3 -->
-  Is there a mobile app?
-
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+     <section class="flex flex-col items-center gap-7 justify-center p-6">
+        <div class="flex flex-col items-center gap-10 py-4">
+            <div class=" flex gap-8 flex-col text-2xl text-center">
+                <h2 class="uppercase font-bold text-[#252733]">frequently asked questions </h2>
+                <p class="text-[#9099c4] text-xl">here are some of our fags. if you  have any other questions <br> you would  like  answered ,please feel free to email us.</p>
+            </div>
+        </div>
+    </section>
+    <div class=" flex flex-col items-center mb-10 text-[#9099c4]">
+        <div class="flex flex-col gap-9 items-center text-start">
+            <div>
+                <h4> what is bookmarking?</h4>
+            </div>
+            <div class="flex ">
+                <h4>how can i request a new browser?</h4>
+            </div>
+            <div>
+                 <h4>how can i request a new browser?</h4>
+            </div>
+            <div>
+                 <h4>is there a mobile app</h4>
+            </div>
+            <div> 
+                what about other chromium browser?</h4>
+            </div>
+            <div class=" "> 
+                <button class="p-4  rounded-md justify-self-center bg-blue-500 text-white">more info</button>
+            </div>
+        </div>
+    </div>
+     <!-- stay -->
+     <section class="bg-blue-700 text-white gap-5 text-center">
+        <div class=" flex flex-col items-center justify-between gap-5 py-6 "> 
+             <h2 class="text-xs">35,000+ ALREADY JOINED</h2>
+            <h3 class="text-xl">Stay Up-to date with what <br>we are doing</h3>
+            <div class="flex gap-9 flex-col lg:flex-row items-center  mt-4">
+                <input type="text " placeholder="Enter your emali  address" class="rounded-md p-2">
+                <button class="rounded-md p-2 px-12 bg-red-800 text-white">contact us</button>
+            </div>
+        </div>
+    </section>
+     <!-- footer -->
+     <footer>
+        <nav class=" flex  flex-col lg:flex-row justify-between items-center p-10 bg-[#252b46] text-white gap-10 px-20">
+                <div class="text-white">
+                    <img class=" bg-white"src="/images/logo-bookmark.svg" alt="">
+                </div>
+                <ul class="flex  items-center gap-5">
+                    <li>FEATURES</li>
+                    <li>PRICING</li>
+                    <li>CONTACT</li></ul>
+                    <div class= "flex  gap-8">
+                        <img src="/images/icon-facebook.svg" alt="">
+                        <img src="/images/icon-twitter.svg" alt=""> 
+                  </div>   
+        </nav>
+     </footer>
+</body>
+</html>
 </body>
 </html>
